@@ -1,0 +1,155 @@
+<html>
+
+<head>
+
+    <title> Javascript </title>
+
+</head>
+
+<body>
+    
+    <h1> Test your reactions!</h1>
+    <p> Click on the boxes and circles as quickly as you can!</p>
+
+    <p>Your time:<span id="timeTaken"></span></p>
+
+    <div id="shape"></div>
+
+
+    <!-- PLAYING WITH A DIFFERENT VERSION OF THE GAME -->
+
+    <!--
+
+    <div id="board">
+        <div id="geo"></div>
+    </div>
+
+    <style>
+        #board {
+            position: relative;
+        }
+
+        #geo {
+
+            height: 25px;
+            width: 25px;
+            background-color: #bbb;
+            border-radius: 10%;
+            display: inline-block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+
+        }
+        
+
+    </style>
+    
+
+    <script>
+        document.getElementById("geo").addEventListener("click", randomize);
+
+        function randomize() {
+
+
+            var random1 = Math.floor(Math.random() * 500 + 30);
+            var random2 = Math.floor(Math.random() * 500 + 30);
+            var colors = ['#081cc5', '#f78ecf', '#F4A460', '#8B008B'];
+            var random3 = colors[Math.floor(Math.random() * colors.length)];
+            var random4 = Math.floor(Math.random() * 500);
+            var random5 = Math.floor(Math.random() * 500);
+            var random6 = Math.floor(Math.random() * 50) + 'px';
+
+            document.querySelector("#geo").style.height = random1;
+            document.querySelector("#geo").style.width = random2;
+            document.querySelector("#geo").style.backgroundColor = random3;
+            document.querySelector("#geo").style.top = random4;
+            document.querySelector("#geo").style.left = random5;
+            document.querySelector("#geo").style.borderRadius = random6;
+
+            
+        }
+
+    </script>
+
+-->
+
+    <style type='text/css'>
+        #shape {
+
+
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            display: none;
+            position: relative;
+            top: 100px;
+            left: 200px;
+        }
+
+    </style>
+
+    <script>
+        var start = new Date().getTime();
+
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+
+        function makeShapeAppear() {
+
+            var top = Math.random() * 400;
+            var left = Math.random() * 400;
+            var width = (Math.random() * 200) + 100;
+            if (Math.random() > 0.5) {
+
+                document.getElementById("shape").style.borderRadius = '50%';
+
+            } else {
+
+                document.getElementById("shape").style.borderRadius = '0';
+
+            }
+
+            document.getElementById("shape").style.backgroundColor = getRandomColor();
+            document.getElementById("shape").style.top = top + 'px';
+            document.getElementById("shape").style.top = left + 'px';
+
+            document.getElementById("shape").style.width = width + 'px';
+
+            document.getElementById("shape").style.height = width + 'px';
+            document.getElementById("shape").style.display = "block";
+            start = new Date().getTime();
+        }
+
+        function appearAfterDelay() {
+
+            setTimeout(makeShapeAppear, Math.random() * 2000);
+
+        }
+
+        appearAfterDelay();
+
+        document.getElementById("shape").onclick = function() {
+
+            document.getElementById("shape").style.display = 'none';
+
+            var end = new Date().getTime();
+
+            var timeTaken = (end - start) / 1000;
+
+            document.getElementById("timeTaken").innerHTML = timeTaken + "s";
+
+            appearAfterDelay();
+        }
+
+    </script>
+
+
+</body>

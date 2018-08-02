@@ -1,0 +1,255 @@
+<html>
+
+<head>
+
+    <title> Javascript </title>
+
+</head>
+
+<body>
+
+    <!-- <p id='text'>This is some text</p>
+
+    <input type='text' id="textInput">
+
+
+    <button id="textChanger">Change the text!</button>-->
+
+    <!-- CHALLENGE 1   -->
+    <!-- 
+
+    <p id='text'>The magic word is - futile</p>
+
+
+    <input type='text' id="textInput">
+
+
+    <button id="textChanger">Insert the magic word</button>
+
+    <p id='text2'>Solve it!</p>
+    
+    -->
+
+    <!-- CHALLENGE 2   -->
+
+    <!-- 
+    <p id='text'>How many fingers am I holding up?</p>
+
+
+    <input type='text' id="textInput">
+
+
+    <button id="textChanger">Insert the number</button>
+
+    <p id='text2'>Solve it!</p>
+
+-->
+
+    <div id='text'></div>
+
+    <script type='text/javascript'>
+        //Variables - basic uses on the website
+
+
+        /* document.getElementById("textChanger").onclick = function() {
+            
+            
+            var textEntered = ""; //tells the browser it's empty but when full should be a string
+            
+            textEntered = document.getElementById("textInput").value;
+            
+            document.getElementById("text").innerHTML = textEntered;
+            
+        }
+         
+        */
+
+        //Arrays: creating, push, splice functions
+
+
+        /* 
+
+        var myArray = new Array(); //creating an array via a function
+
+        myArray[0] = 'pizza'; //saying first tem will be pizza
+
+        myArray[1] = 'choclate';
+
+
+        var tweets = []; //one more way of creating an empty array
+
+        var tweets = ['Morning', 'I love mornings'];
+
+        tweets.push('Back to work'); //adding an item to the end of the array
+
+        
+        tweets.splice(1,1); //deleting - start deleting at item no 1 and then delete one item
+        
+        tweets.splice(1,0, 'Cornflakes'); //adding - at item no 1 do 0 deleting just add Cornflakes
+        
+        tweets.splice(2,1, 'Cornflakes'); //replacing - at item no 1 do 1 deleting just add Cornflakes (more can be added)
+        
+        console.log(tweets);
+    
+        */
+
+        //IF STATEMENT
+
+        /*
+        
+        var x = 2;
+        
+        if (x != 1) {
+            
+            console.log('Yeah');
+            
+        } else { console.log('Ooops');}
+        
+           */
+
+
+        //Challenge 1- COMPLETED, too easy....
+
+        /*
+
+        document.getElementById("textChanger").onclick = function() {
+
+            var correct = 'Thats correct mate!';
+            var incorrect = 'Damn mate, youre wrong!';
+
+            var input = document.getElementById("textInput");
+
+
+            if (input.value == 'futile') {
+
+                document.getElementById("text2").innerHTML = correct;
+
+            } else {
+
+                document.getElementById("text2").innerHTML = incorrect;
+
+            }
+
+        }
+
+        //OR
+
+        /*
+        
+         document.getElementById("textChanger").onclick = magicWord;
+             
+             magicWord() {
+
+            if (input.value == 'futile') {
+                
+                document.getElementById("text2").innerHTML = correct;
+
+            } else {
+
+                document.getElementById("text2").innerHTML = incorrect;
+
+            }
+
+        }
+        
+        */
+
+        //Challenge 2 - FINGER GAME - DONE, easy....
+
+        /*
+        
+        document.getElementById("textChanger").onclick = gameSuper;
+        
+        
+        function gameSuper() {
+
+            var correct = 'Thats correct mate!';
+            var incorrect = 'Damn mate, youre wrong! the correct nummber was ';
+            var randomNumber = Math.floor (Math.random() * 6);
+            var input = document.getElementById("textInput");
+            
+            
+            if (input.value == randomNumber) {
+
+                document.getElementById("text2").innerHTML = correct;
+
+            } else {
+
+                document.getElementById("text2").innerHTML = incorrect + randomNumber;
+                
+            
+            }
+            
+            
+
+        }
+        
+          */
+
+        //LOOPS
+
+        //FOR LOOP
+
+        /*
+
+        var tweetString = "";
+
+        var tweets = ['Hi everyone', 'Hello lads', 'Whats up', 'Morning ladies'];
+
+        
+
+        for (var i = 0; i < tweets.length; i++) {
+        
+            tweetString = tweetString + '<p>' + tweets[i] + '</p>';
+            document.getElementById("text").innerHTML = tweetString;
+        }
+        
+        */
+
+        //WHILE LOOP
+
+        /*
+        
+        var tweets = ['Hi everyone', 'Hello lads', 'Whats up', 'Morning ladies'];
+
+        var tweetString = "";
+
+        var i = 0;
+
+        while (i, tweets.length) {
+
+            tweetString = tweetString + '<p>' + tweets[i] + '</p>';
+            i++;
+
+        }
+        
+         document.getElementById("text").innerHTML = tweetString;
+         
+         */
+
+        //keep checking something until the correct value is found
+
+        //var gotIt = false;
+        //while (gotIt == false) etc...
+
+        //FUNCTIONS
+
+/*
+        function average(x, y) {
+
+            return ((x + y) / 2);
+
+        }
+
+        alert(average(4, 10));
+        
+        
+        */
+        
+        
+
+    </script>
+
+</body>
+
+</html>
