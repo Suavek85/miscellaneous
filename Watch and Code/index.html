@@ -1,0 +1,104 @@
+<html>
+    
+    <head>
+        
+        
+        
+    </head>
+    
+    <body>
+        
+        
+        <p>To do list</p>
+        
+        <!--
+        
+        
+        <button id='displaytodosbtn'>
+            
+            Display todos
+            
+            
+        </button>
+        
+         <button id='toggleallbtn'>
+            
+           Toggle all
+            
+            
+        </button>
+        
+        -->
+        <div>
+        
+     
+         <button onclick='handlers.toggleAll()'>
+            
+           Toggle all
+            
+            
+        </button>
+        
+        </div>
+        
+        
+        
+        
+        
+        <div> <button onclick='handlers.addToDo()'>
+            
+        Add
+            
+        </button>
+        <input id='addtodoinput' type="text">
+        
+        </div>
+        
+       
+        <div>
+            
+            <button onclick='handlers.changeToDo()'>Change todo</button>
+            <input id='changetodoposition' type='number'>
+            <input id='changetodotext' type="text">
+            
+            
+            
+        </div>
+        
+        
+          
+        
+        <div>
+            
+            <button onclick='handlers.toggleCompleted()'>Toggle completed</button>
+            <input id='togglecompleted' type='number'>
+           
+            
+            
+        </div>
+        
+        
+        <ul>
+            
+            
+            
+        </ul>
+        
+        
+        
+        
+    </body>
+    
+    <style>
+    
+    
+        p {
+            
+            font-size: 40px;
+            
+        }
+    
+    </style>
+    <script src="script.js"></script>
+    
+</html>
