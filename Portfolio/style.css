@@ -228,13 +228,22 @@ ul {
 }
 
 
-#udemy {
+.udemy {
 
     width: 40px;
     height: 40px;
+}
+
+.rest {
+
+    width: 130px;
+    height: auto;
 
 
 }
+
+
+
 
 .button-course-1 {
 
