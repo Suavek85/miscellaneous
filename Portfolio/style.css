@@ -10,11 +10,14 @@ body {
 
 h1 {
 
-    color: #0366d6;
+    color: #0099CC;
     text-align: center;
 
 
 }
+
+
+
 
 /* MAIN CONTAINERS */
 
@@ -92,7 +95,6 @@ h1 {
 
 ul {
 
-
     line-height: 1.7;
 
 }
@@ -122,17 +124,41 @@ ul {
 .button-1 {
 
     flex-basis: 40%;
-    background-color: #DDDDDD;
-    height: 30px;
+    height: 35px;
+    color: #0099CC;
+    background-color: white;
+    border: 1px solid #0099CC;
+    border-radius: 6px; 
+    cursor: pointer;
+    font-weight: 600;
+    
 
 }
+
+
+.button-1:hover {
+      background-color: #008CBA;
+      color: white;
+ }
+
+
 
 .button-2 {
 
-    flex-basis: 40%;
-    background-color: #DDDDDD;
-    height: 30px;
+     flex-basis: 40%;
+    height: 35px;
+    color: #0099CC;
+    background-color: white;
+    border: 1px solid #0099CC;
+    border-radius: 6px; 
+    cursor: pointer;
+    font-weight: 600;
 }
+
+.button-2:hover {
+      background-color: #008CBA;
+      color: white;
+ }
 
 
 #screen1 {
@@ -217,7 +243,7 @@ ul {
 .course-btns {
 
 
-    flex-basis: 15%;
+    flex-basis: 20%;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -230,8 +256,8 @@ ul {
 
 .udemy {
 
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
 }
 
 .rest {
@@ -243,19 +269,25 @@ ul {
 }
 
 
-
-
 .button-course-1 {
 
     flex-basis: 40%;
     background-color: #DDDDDD;
-    height: 20px;
+    height: 25px;
+    color: #3b444b;
+    background-color: white;
+    border: 1px solid #3b444b;
+    border-radius: 6px; 
+    cursor: pointer;
+    font-weight: 600;
 
 }
 
-.button-course-2 {
 
-    flex-basis: 40%;
-    background-color: #DDDDDD;
-    height: 20px;
-}
+.button-course-1:hover {
+      background-color: #414a4c;
+      color: white;
+ }
+
+
+
