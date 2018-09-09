@@ -16,33 +16,114 @@ h1 {
 
 }
 
+ul {
+
+    line-height: 1.7;
+
+}
 
 
 
-/* MAIN CONTAINERS */
+/* SECTION 0 */
 
-.main-flex {
+
+
+.about {
+   height: 100vh;
+    width: 100%;
+    background: #00467F; 
+    background-image: linear-gradient(to right, rgba(20,30,48,.9), rgba(36,59,85,.9)), url(images/about-img.jpg);
+    background-image: -webkit-linear-gradient(to right, rgba(20,30,48,.9), rgba(36,59,85,.9)), url(images/about-img.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    padding: 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+}
+
+
+.menu__link {
+    text-decoration: none;
+    color: #ddd;
+    padding: 20px;
+}
+
+
+.about__header {
+    color: #eee;
+    padding-top: 40px;
+}
+
+.about__content {
+    color: #ccc;
+    max-width: 500px;
+    line-height: 1.5;
+    text-align: center;
+    justify-content: center;
+    
+    align-self: center;
+}
+
+
+
+.skills {
+    color: #f2f5f7;
+    text-align: center;
+}
+
+.skills__header {
+    color: #0099CC;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.skills__icons {
+    font-size: 50px;
+    text-align: center;
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    
+}
+
+.skills__icons > i {
+    padding: 20px;
+}
+
+
+
+
+
+/* MAIN FLEX CONTAINERS */
+
+.main__flex {
 
 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-
-
-}
-
-
-.header-flex {
-
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    margin: 0;
+    padding: 0;
 
 }
 
 
-.section-flex {
+
+.section-projects__flex {
 
 
     display: flex;
@@ -50,22 +131,54 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    padding: 50px;
 
 
 }
 
-/* CARD 1 CONTAINER */
+.section-projects__flex h1 {
+    width: 100%;
+}
 
-.card-1-flex {
+.section-courses__flex {
 
 
     display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 400px;
-    background-color: orange;
-    margin: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    width: 100%;
+    background: #00467F; 
+    background-image: linear-gradient(to right, rgba(20,30,48,.8), rgba(36,59,85,.8)), url(images/courses-img.jpg);
+    background-image: -webkit-linear-gradient(to right, rgba(20,30,48,.8), rgba(36,59,85,.8)), url(images/about-img.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
 
+}
+
+.section-courses__flex h1 {
+    width: 100%;
+}
+
+
+
+
+/* PROJECTS CARD CONTAINER */
+
+.projects__flex {
+
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    max-height: 400px;
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.15);
 }
 
 
@@ -81,7 +194,7 @@ h1 {
 }
 
 
-.project-name {
+.project__name {
 
     width: 270px;
     height: 35px;
@@ -93,24 +206,16 @@ h1 {
 
 }
 
-ul {
 
-    line-height: 1.7;
-
-}
-
-
-.project-desc {
+.project__desc {
 
     flex-basis: 40%;
     background-color: white;
 
-
-
 }
 
 
-.project-btns {
+.project__btns {
 
     flex-basis: 15%;
     background-color: white;
@@ -121,10 +226,11 @@ ul {
 
 }
 
-.button-1 {
+.project__btn-left {
 
-    flex-basis: 40%;
-    height: 35px;
+    flex-basis: 50%;
+    height: 45px;
+    padding: 0 20 0 20;
     color: #0099CC;
     background-color: white;
     border: 1px solid #0099CC;
@@ -136,17 +242,18 @@ ul {
 }
 
 
-.button-1:hover {
+.project__btn-left:hover {
       background-color: #008CBA;
       color: white;
  }
 
 
 
-.button-2 {
+.project__btn-right {
 
-     flex-basis: 40%;
-    height: 35px;
+    flex-basis: 50%;
+    height: 45px;
+    padding: 0 20 0 20;
     color: #0099CC;
     background-color: white;
     border: 1px solid #0099CC;
@@ -155,7 +262,7 @@ ul {
     font-weight: 600;
 }
 
-.button-2:hover {
+.project__btn-right:hover {
       background-color: #008CBA;
       color: white;
  }
@@ -193,23 +300,25 @@ ul {
 
 
 
-/* CARD 2 CONTAINER */
+/* COURSES CARD CONTAINER */
 
-.card-2-flex {
+.courses__flex {
 
 
     display: flex;
     flex-direction: column;
     width: 250px;
     height: 300px;
-    background-color: yellow;
-    margin: 30px;
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.15);
 
 }
 
 
-
-.course-logo {
+.course__logo {
 
     flex-basis: 15%;
     background-color: white;
@@ -219,7 +328,7 @@ ul {
     padding: 7px;
 }
 
-.course-name {
+.course__name {
 
     flex-basis: 20%;
     background-color: #F0EDE5;
@@ -229,7 +338,7 @@ ul {
 
 }
 
-.course-desc {
+.course__desc {
 
     flex-basis: 50%;
     background-color: white;
@@ -240,8 +349,7 @@ ul {
 
 }
 
-.course-btns {
-
+.course__btns {
 
     flex-basis: 20%;
     background-color: white;
@@ -249,7 +357,6 @@ ul {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-
 
 }
 
@@ -271,9 +378,10 @@ ul {
 
 .button-course-1 {
 
-    flex-basis: 40%;
+    flex-basis: 50%;
     background-color: #DDDDDD;
-    height: 25px;
+    height: 35px;
+    padding: 0 15 0 15;
     color: #3b444b;
     background-color: white;
     border: 1px solid #3b444b;
@@ -290,4 +398,24 @@ ul {
  }
 
 
+/* CONTACT */
+
+.contact {
+    background: #141E30;  
+    background: -webkit-linear-gradient(to right, #243B55, #141E30); 
+    background: linear-gradient(to right, #243B55, #141E30); 
+    color: #eee;
+    
+    width: 100%;
+    height: 120px;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact__icon {
+    color: #eee;
+    font-size: 30px;
+    padding: 0 7px;
+}
 
