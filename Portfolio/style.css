@@ -173,7 +173,7 @@ ul {
 
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    width: 400px;
     max-height: 400px;
     background-color: #fff;
     margin: 20px;
@@ -366,13 +366,14 @@ ul {
 
     width: 35px;
     height: 35px;
+    padding-bottom: 8px;
 }
 
 .rest {
 
     width: 130px;
     height: auto;
-
+    padding-bottom: 8px;
 
 }
 
