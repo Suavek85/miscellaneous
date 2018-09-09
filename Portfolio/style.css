@@ -69,10 +69,9 @@ ul {
 .about__content {
     color: #ccc;
     max-width: 500px;
-    line-height: 1.5;
+    line-height: 2.5;
     text-align: center;
     justify-content: center;
-    
     align-self: center;
 }
 
