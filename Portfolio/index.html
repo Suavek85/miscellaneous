@@ -4,73 +4,104 @@
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 </head>
-
 
 
 <body>
 
 
-    <div class='main-flex'>
+    <div class='main__flex'>
 
-
-        <section class='header-flex'>
-            <h1>Own projects:</h1>
+        <section id='anchor0' class="about">
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="#anchor0" class="menu__link">ABOUT</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#anchor1" class="menu__link">OWN PROJECTS</a>
+                    </li>
+                    <li class="men__item">
+                        <a href="#anchor2" class="menu__link">COURSES</a>
+                    </li> 
+                    <li class="men__item">
+                        <a href="#anchor3" class="menu__link">CONTACT</a>
+                    </li>                   
+                </ul>
+            </nav>
+            
+            <h1 class="about__header">Hi, I'm Slawomir Niemiec </h1>
+            <p class="about__content">Not long ago I realized that what I am really passionate about is coding, especially front-end development. Have a look below at some of my projects and the courses that helped me improve my coding skills. </p>
+            
+            <div class="skills">
+                <h2 class="skills__header">SKILLS</h2>
+                <div class="skills__icons">
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js"></i>
+                    <i class="fab fa-github-square"></i>
+                    <!--<i class="fab fa-git-square"></i>-->
+                    <!--<i class="fab fa-sass"></i>-->
+                    <!--<i class="fab fa-node"></i>-->
+                    <!--<i class="fab fa-java"></i>-->
+                    
+                </div>
+            </div>
+            
         </section>
+       
+       
 
+        <section class='section-projects__flex'>
 
-        <section class='section-flex'>
+            <h1 id='anchor1'>Own projects:</h1>
 
-
-            <div class='card-1-flex'>
+            <div class='projects__flex'>
 
                 <div class='screenshot' id='screen1'>
-                    <div class='project-name'>Playgrounds on Costa del Sol - Homepage project</div>
+                    <div class='project__name'>Playgrounds on Costa del Sol - Homepage project</div>
                 </div>
 
-                <div class='project-desc'>
+                <div class='project__desc'>
                     <ul>
 
-                        <li>HTML, CSS a bit of JS, basic responsiveness, responsive menu</li>
-                        <li>my own idea, work in progress</li>
+                        <li>HTML, CSS and some JavaSript, </li>
+                        <li>basic responsiveness, responsive menu,</li>
+                        <li>my own idea,</li> 
+                        <li>work still in progress.</li>
                     </ul>
 
 
 
                 </div>
-                <div class='project-btns'>
-                    <a href="https://htmlpreview.github.io/?https://github.com/Suavek85/Playgrounds-on-Costa-del-Sol/blob/master/index.html" target="_blank"><button class='button-1'>Preview</button></a>
+                <div class='project__btns'>
+                    <a href="https://htmlpreview.github.io/?https://github.com/Suavek85/Playgrounds-on-Costa-del-Sol/blob/master/index.html" target="_blank"><button class='project__btn-left'>Preview</button></a>
       
-                    <a href="https://github.com/Suavek85/Playgrounds-on-Costa-del-Sol/blob/master/README.md" target="_blank"><button class='button-2'>Readme</button></a>
+                    <a href="https://github.com/Suavek85/Playgrounds-on-Costa-del-Sol/blob/master/README.md" target="_blank"><button class='project__btn-right'>Readme</button></a>
                 </div>
 
             </div>
 
-            <div class='card-1-flex'>
+            <div class='projects__flex'>
 
                 <div class='screenshot' id='screen2'>
-                    <div class='project-name'>Typing Game - Javascript project</div>
+                    <div class='project__name'>Typing Game - Javascript project</div>
                 </div>
 
-                <div class='project-desc'>
+                <div class='project__desc'>
                     <ul>
 
-                        <li>JS project with flexbox layout,</li>
+                        <li>JavaScript project with flexbox layout,</li>
                         <li>my own idea, from scratch, not based on a course,</li>
-                         <li>if you notice a bug do let me know!,</li>
-                        <li>3 game levels, different code.</li>
-                        
-                        
-
+                        <li>3 game levels, using slightly different code.</li>
                     </ul>
 
-
-
                 </div>
-                <div class='project-btns'>
-                  <a href="https://htmlpreview.github.io/?https://github.com/Suavek85/Typing-game/blob/master/index.html" target="_blank"><button class='button-1'>Preview</button></a>
-                    <a href="https://github.com/Suavek85/Typing-game/blob/master/README.md" target="_blank"><button class='button-2'>Readme</button></a>
+                <div class='project__btns'>
+                  <a href="https://htmlpreview.github.io/?https://github.com/Suavek85/Typing-game/blob/master/index.html" target="_blank"><button class='project__btn-left'>Preview</button></a>
+                    <a href="https://github.com/Suavek85/Typing-game/blob/master/README.md" target="_blank"><button class='project__btn-right'>Readme</button></a>
                 </div>
 
             </div>
@@ -78,38 +109,37 @@
 
 
 
-
-            <div class='card-1-flex'>
+            <div class='projects__flex'>
 
                 <div class='screenshot' id='screen3'>
-                    <div class='project-name'>Weekly Planner- Javascript project</div>
+                    <div class='project__name'>Weekly Planner- Javascript project</div>
                 </div>
 
-                <div class='project-desc'>
+                <div class='project__desc'>
                     <ul>
 
-                        <li>JS project with flexbox layout,</li>
+                        <li>JavaSript project with flexbox layout,</li>
                         <li>still in progress, new features coming...</li>
                         <li>my own idea, from scratch, not based on an online course.</li>
                         
 
                     </ul>
                 </div>
-                <div class='project-btns'>
-                    <a href="https://htmlpreview.github.io/?https://github.com/Suavek85/Weekly-Planner-JS/blob/master/index.html" target="_blank"><button class='button-1'>Preview</button></a>
-                    <a href="https://github.com/Suavek85/Weekly-Planner-JS/blob/master/README.md" target="_blank"><button class='button-2'>Readme</button></a>
+                <div class='project__btns'>
+                    <a href="https://htmlpreview.github.io/?https://github.com/Suavek85/Weekly-Planner-JS/blob/master/index.html" target="_blank"><button class='project__btn-left'>Preview</button></a>
+                    <a href="https://github.com/Suavek85/Weekly-Planner-JS/blob/master/README.md" target="_blank"><button class='project__btn-right'>Readme</button></a>
                 </div>
 
             </div>
 
 
-            <div class='card-1-flex'>
+            <div class='projects__flex'>
 
                 <div class='screenshot' id='screen4'>
-                    <div class='project-name'>White Villages Tours - Homepage project</div>
+                    <div class='project__name'>White Villages Tours - Homepage project</div>
                 </div>
 
-                <div class='project-desc'>
+                <div class='project__desc'>
                     <ul>
 
                         <li>HTML, CSS (Grid and Flexbox), a bit of JS, some basic resposiveness, responsive menu</li>
@@ -117,38 +147,31 @@
 
                     </ul>
                 </div>
-                <div class='project-btns'>
-                      <a href="https://htmlpreview.github.io/?https://github.com/Suavek85/White-Village-Tours-Homepage/blob/master/index.html" target="_blank"><button class='button-1'>Preview</button></a>
-                   <a href="https://github.com/Suavek85/White-Village-Tours-Homepage/blob/master/README.md" target="_blank"><button class='button-2'>Readme</button></a>
+                <div class='project__btns'>
+                      <a href="https://htmlpreview.github.io/?https://github.com/Suavek85/White-Village-Tours-Homepage/blob/master/index.html" target="_blank"><button class='project__btn-left'>Preview</button></a>
+                   <a href="https://github.com/Suavek85/White-Village-Tours-Homepage/blob/master/README.md" target="_blank"><button class='project__btn-right'>Readme</button></a>
                 </div>
 
             </div>
 
 
-
-
-    </div>
-
-
     </section>
 
-    <section class='header-flex'>
-        <h1>Front-end & software testing courses completed:</h1>
-    </section>
 
-    <section class='section-flex'>
+    <section id='anchor2' class='section-courses__flex'>
 
+<h1>Front-end & software testing courses completed:</h1>
 
 
-        <div class='card-2-flex'>
+        <div class='courses__flex'>
 
-            <div class='course-logo'>
+            <div class='course__logo'>
                 <div><img src="images/udemy1.png" class='udemy' alt="udemy"></div>
             </div>
 
-            <div class='course-name'>Advanced CSS and Sass: Flexbox, Grid, Animations and More!</div>
+            <div class='course__name'>Advanced CSS and Sass: Flexbox, Grid, Animations and More!</div>
 
-            <div class='course-desc'>The most advanced and modern CSS course on the internet: master flexbox, CSS Grid, responsive design, and so much more.</div>
+            <div class='course__desc'>The most advanced and modern CSS course on the internet: master flexbox, CSS Grid, responsive design, and so much more.</div>
 
             <div class='course-btns'>
 
@@ -161,18 +184,17 @@
 
 
 
+        <div class='courses__flex'>
 
-        <div class='card-2-flex'>
-
-            <div class='course-logo'>
+            <div class='course__logo'>
                 <div><img src="images/udemy1.png" class='udemy' alt="udemy"></div>
             </div>
 
-            <div class='course-name'>The Complete Web Developer Course 2.0</div>
+            <div class='course__name'>The Complete Web Developer Course 2.0</div>
 
-            <div class='course-desc'>Learn Web Development by building 25 websites and mobile apps using HTML, CSS, Javascript, PHP, Python, MySQL & more! </div>
+            <div class='course__desc'>Learn Web Development by building 25 websites and mobile apps using HTML, CSS, Javascript, PHP, Python, MySQL & more! </div>
 
-            <div class='course-btns'>
+            <div class='course__btns'>
 
                 <a href="https://www.udemy.com/the-complete-web-developer-course-2/" target="_blank"><button class='button-course-1'>More info</button></a>
                
@@ -183,21 +205,16 @@
 
 
 
-
-
-
-
-
-        <div class='card-2-flex'>
-            <div class='course-logo'>
+        <div class='courses__flex'>
+            <div class='course__logo'>
                 <div><img src="images/udemy1.png" class='udemy' alt="udemy"></div>
             </div>
 
-            <div class='course-name'>The Complete JavaScript Course 2018: Build Real Projects!</div>
+            <div class='course__name'>The Complete JavaScript Course 2018: Build Real Projects!</div>
 
-            <div class='course-desc'>Master JavaScript with the most complete course on the market! Projects, challenges, quizzes, ES6+, OOP, AJAX, Webpack.</div>
+            <div class='course__desc'>Master JavaScript with the most complete course on the market! Projects, challenges, quizzes, ES6+, OOP, AJAX, Webpack.</div>
 
-            <div class='course-btns'>
+            <div class='course__btns'>
 
                 <a href="https://www.udemy.com/the-complete-javascript-course/" target="_blank"><button class='button-course-1'>More info</button></a>
                 
@@ -208,19 +225,17 @@
 
 
 
+        <div class='courses__flex'>
 
-
-        <div class='card-2-flex'>
-
-            <div class='course-logo'>
+            <div class='course__logo'>
                 <div><img src="images/udemy1.png" class='udemy' alt="udemy"></div>
             </div>
 
-            <div class='course-name'>Web Design for Web Developers: Build Beautiful Websites!</div>
+            <div class='course__name'>Web Design for Web Developers: Build Beautiful Websites!</div>
 
-            <div class='course-desc'>Learn web design with 25+ simple-to-use rules and guidelines — tons of amazing web design resources included! </div>
+            <div class='course__desc'>Learn web design with 25+ simple-to-use rules and guidelines — tons of amazing web design resources included! </div>
 
-            <div class='course-btns'>
+            <div class='course__btns'>
 
                 <a href="https://www.udemy.com/web-design-secrets/" target="_blank"><button class='button-course-1'>More info</button></a>
                 
@@ -231,24 +246,18 @@
 
 
 
+        <div class='courses__flex'>
 
 
-       
-
-
-
-        <div class='card-2-flex'>
-
-
-            <div class='course-logo'>
+            <div class='course__logo'>
                 <div><img src='images/watcandcode.png' class='rest' alt="watchandcode"></div>
             </div>
 
-            <div class='course-name'>Practical JavaScript</div>
+            <div class='course__name'>Practical JavaScript</div>
 
-            <div class='course-desc'>Focus on what matters most, the fundamentals. Mastering the building blocks of programming (such as functions, objects, and conditional logic)... </div>
+            <div class='course__desc'>Focus on what matters most, the fundamentals. Mastering the building blocks of programming (such as functions, objects, and conditional logic)... </div>
 
-            <div class='course-btns'>
+            <div class='course__btns'>
 
                 <a href="https://watchandcode.com/p/practical-javascript" target="_blank"><button class='button-course-1'>More info</button></a>
               
@@ -258,21 +267,19 @@
         </div>
         
         
-        
-        
 
-        <div class='card-2-flex'>
+        <div class='courses__flex'>
             
             
-            <div class='course-logo'>
+            <div class='course__logo'>
                 <div><img src="images/udemy1.png" class='udemy' alt="udemy"></div>
             </div>
 
-            <div class='course-name'>Selenium WebDriver With Java - Novice To Ninja</div>
+            <div class='course__name'>Selenium WebDriver With Java - Novice To Ninja</div>
 
-            <div class='course-desc'> <bold>(IN PROGRESS)</bold> Join the "Top Rated Selenium Course" - Basics To Advanced Level With POM, Grid, Maven, Jenkins. 41.5 hours on-demand video... </div>
+            <div class='course__desc'> <bold>(IN PROGRESS)</bold> Join the "Top Rated Selenium Course" - Basics To Advanced Level With POM, Grid, Maven, Jenkins. 41.5 hours on-demand video... </div>
 
-            <div class='course-btns'>
+            <div class='course__btns'>
 
                 <a href="https://www.udemy.com/selenium-webdriver-with-java-testng-and-log4j/" target="_blank"><button class='button-course-1'>More info</button></a>
                
@@ -284,17 +291,17 @@
 
 
 
-        <div class='card-2-flex'>
+        <div class='courses__flex'>
             
-            <div class='course-logo'>
+            <div class='course__logo'>
                 <div><img src="images/udemy1.png" class='udemy' alt="udemy"></div>
             </div>
 
-            <div class='course-name'>ISTQB Foundation Level Certification (CTFL)</div>
+            <div class='course__name'>ISTQB Foundation Level Certification (CTFL)</div>
 
-            <div class='course-desc'>An online course to be an ISTQB certified tester and searn the basics of software testing principles and techniques. </div>
+            <div class='course__desc'>An online course to be an ISTQB certified tester and searn the basics of software testing principles and techniques. </div>
 
-            <div class='course-btns'>
+            <div class='course__btns'>
 
                 <a href="https://www.udemy.com/istqb-certified-tester-foundation-level-ctfl/" target="_blank"><button class='button-course-1'>More info</button></a>
                
@@ -304,20 +311,19 @@
         </div>
         
         
-        
 
-        <div class='card-2-flex'>
+        <div class='courses__flex'>
             
             
-              <div class='course-logo'>
+              <div class='course__logo'>
                 <div><img src="images/udemy1.png" class='udemy' alt="udemy"></div>
             </div>
 
-            <div class='course-name'>Software Testing Essentials [Manual - Jira - SQL - Unix]</div>
+            <div class='course__name'>Software Testing Essentials [Manual - Jira - SQL - Unix]</div>
 
-            <div class='course-desc'>This course includes Software Testing (Basics & Advanced) + JIRA+ SQL + Basics of Automation (performance testing using Jmeter, functional automation using Selenium). </div>
+            <div class='course__desc'>This course includes Software Testing (Basics & Advanced) + JIRA+ SQL + Basics of Automation (performance testing using Jmeter, functional automation using Selenium). </div>
 
-            <div class='course-btns'>
+            <div class='course__btns'>
 
                 <a href="https://www.udemy.com/software-manualtesting/" target="_blank"><button class='button-course-1'>More info</button></a>
                
@@ -327,12 +333,20 @@
             
         </div>
 
+    </section>
+    
 
+    <section id='anchor3' class="contact">
+        <h1>CONTACT</h1>
+        
+        <a href="mailto:slawekniemiec@gmail.com" class="contact__icon"><i class="fab fa-envelope-open-text"></i></a>
+        <a href="https://www.linkedin.com/in/slawomirniemiec/" class="contact__icon"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Suavek85" class="contact__icon"><i class="fab fa-github-square"></i></a>
+        
+        
     </section>
 
-
     </div>
-
 
 
 </body>
