@@ -169,7 +169,7 @@ width: 500px;
     display: flex;
     flex-direction: column;
     width: 400px;
-    max-height: 400px;
+    height: 400px;
     background-color: #fff;
     margin: 20px;
     padding: 20px;
