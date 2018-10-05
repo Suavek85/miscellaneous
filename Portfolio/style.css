@@ -406,10 +406,14 @@ ul {
     padding: 10px;
     line-height: 2;
   }
-
+  
+  .about__content {
+    line-height: 2;
+  }
+  
   .skills__header {
     margin: auto;
-    padding-top: 10px;
+    padding-top: 5px;
   }
   
   .nav {
