@@ -404,12 +404,14 @@ ul {
 @media screen and (max-width: 500px) {
   .about__header {
     padding: 10px;
+    line-height: 2;
   }
 
   .skills__header {
     margin: auto;
+    padding-top: 10px;
   }
-
+  
   .nav {
     padding: 5px;
   }
