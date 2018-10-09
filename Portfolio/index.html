@@ -381,35 +381,29 @@
     </div>
 
     <script>
-        var i = 0;
-
         var txt = 'Have a look below at some of my projects and the courses that helped me improve my coding skills.';
-
-        var speed = 50;
-
+        var charDelay = 50;
+        var iconsDelay = (txt.length * charDelay) + 500;
         var greeting = document.getElementById("about__animation");
-
         var icons = document.querySelectorAll(".fab");
-
         var iconsArray = Array.prototype.slice.call(
             icons);
+         var i = 0;
 
         function greetingEnter() {
             greeting.style.WebkitAnimation = "blurFadeInOut 1.5s 1";
             greeting.style.animation = "blurFadeInOut 1.5s 1";
         }
-
         greetingEnter();
-
         greeting.addEventListener("webkitAnimationEnd", typeAndIcons);
         greeting.addEventListener("animationend",
             typeAndIcons);
-
+            
         function typeAndIcons() {
             if (i < txt.length) {
                 document.getElementById("about__typewrite").innerHTML += txt.charAt(i);
                 i++;
-                setTimeout(typeAndIcons, speed);
+                setTimeout(typeAndIcons, charDelay);
                 setTimeout(function () {
                     document.querySelector(".skills__header").style.display = "block";
                     document.querySelector(".skills__icons").style.display = "flex";
@@ -417,9 +411,8 @@
                         element.style.WebkitAnimation = "fadeInUp 3s 1";
                         element.style.animation = "fadeInUp 3s 1";
                     })
-                }, 5500)
+                }, iconsDelay)
             }
-
         }
     </script>
 
