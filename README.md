@@ -7,7 +7,6 @@ Including:
 
 - Watch and Code: Practical JavaScript (Gordon Zhu)
 
-- Portfolio: https://suavek85.github.io/miscellaneous/Portfolio/index.html ,
-https://htmlpreview.github.io/?https://github.com/Suavek85/miscellaneous/blob/master/Portfolio/index.html
+- Portfolio: https://suavek85.github.io/miscellaneous/Portfolio/index.html 
 
 
