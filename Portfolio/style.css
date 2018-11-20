@@ -60,6 +60,10 @@ ul {
 .about__header {
   color: #eee;
   padding-top: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600px;
   -webkit-animation: blurFadeInOut 1.5s cubic-bezier(0.95, 0.05, 0.795, 0.035);
   -moz-animation: blurFadeInOut 1.5s cubic-bezier(0.95, 0.05, 0.795, 0.035);
   -ms-animation: blurFadeInOut 1.5s cubic-bezier(0.95, 0.05, 0.795, 0.035);
@@ -210,7 +214,7 @@ ul {
 .projects__flex {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 250px;
   height: 400px;
   background-color: #fff;
   margin: 20px;
@@ -221,15 +225,16 @@ ul {
 
 .screenshot {
   flex-basis: 45%;
-  background-color: red;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-content: center;
+  background-size: cover;
+  background-position: center;
 }
 
 .project__name {
-  width: 270px;
+  width: 220px;
   height: 35px;
   margin: auto auto 20px auto;
   background-color: white;
@@ -249,7 +254,7 @@ ul {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  outline: 0;
+  outline: none;
 }
 
 .project__btn-left {
@@ -262,7 +267,7 @@ ul {
   border-radius: 6px;
   cursor: pointer;
   font-weight: 600;
-  outline: 0;
+  outline: none;
 }
 
 .project__btn-left:hover {
@@ -280,7 +285,6 @@ ul {
   border-radius: 6px;
   cursor: pointer;
   font-weight: 600;
-  outline: 0;
 }
 
 .project__btn-right:hover {
@@ -290,23 +294,45 @@ ul {
 
 #screen1 {
   background-image: url(images/screen1.PNG);
-  background-size: cover;
+ 
 }
 
 #screen2 {
   background-image: url(images/new_typing.PNG);
-  background-size: cover;
+ 
 }
 
 #screen3 {
   background-image: url(images/weekly_planner_2.PNG);
-  background-size: cover;
+ 
 }
 
 #screen4 {
   background-image: url(images/screen41.PNG);
-  background-size: cover;
+  
 }
+
+#screen5 {
+  background-image: url(images/face-recognize.PNG);
+ 
+}
+
+#screen6 {
+  background-image: url(images/robo-friends.PNG);
+  
+}
+
+#screen7 {
+  background-image: url(images/pig-game.PNG);
+  
+}
+
+#coursesprojects {
+
+margin-top: 70px;
+
+}
+
 
 /* COURSES CARD CONTAINER */
 
@@ -376,6 +402,7 @@ ul {
   border-radius: 6px;
   cursor: pointer;
   font-weight: 600;
+  outline: none;
 }
 
 .button-course-1:hover {
