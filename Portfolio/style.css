@@ -25,13 +25,13 @@ ul {
       rgba(20, 30, 48, 0.9),
       rgba(36, 59, 85, 0.9)
     ),
-    url(images/about-img.jpg);
+    url(images/about-img-gen.jpg);
   background-image: -webkit-linear-gradient(
       to right,
       rgba(20, 30, 48, 0.9),
       rgba(36, 59, 85, 0.9)
     ),
-    url(images/about-img.jpg);
+    url(images/about-img-gen.jpg);
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
@@ -327,6 +327,10 @@ ul {
   
 }
 
+#screen8 {
+  background-image: url(images/forkify-gen.PNG);
+  
+}
 #coursesprojects {
 
 margin-top: 70px;
