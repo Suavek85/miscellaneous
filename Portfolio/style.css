@@ -234,7 +234,7 @@ ul {
 }
 
 .project__name {
-  width: 220px;
+  width: 100%;
   height: 35px;
   margin: auto auto 20px auto;
   background-color: white;
