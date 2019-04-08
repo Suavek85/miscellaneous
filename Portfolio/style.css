@@ -236,8 +236,7 @@ ul {
 .project__name {
   width: 100%;
   height: 35px;
-  margin: auto auto 20px auto;
-  background-color: white;
+  margin: auto auto auto auto;
   color: orange;
   padding: 5px;
   font-weight: 600;
