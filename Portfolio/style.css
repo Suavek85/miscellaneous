@@ -169,6 +169,7 @@ ul {
 .section-projects__flex {
   display: flex;
   flex-direction: row;
+  width: 100vw;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
