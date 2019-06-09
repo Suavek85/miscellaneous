@@ -338,6 +338,11 @@ ul {
   
 }
 
+#emo-app {
+  background-image: url(images/emoticon-back.PNG);
+  
+}
+
 #coursesprojects {
 
 margin-top: 70px;
